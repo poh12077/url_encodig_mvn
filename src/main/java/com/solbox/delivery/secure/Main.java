@@ -5,10 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			
-			String url = "/a/b/c/d/file_name";
+			String url = "/a/b/c/d/file_name.mp4";
 			String key = "abcdefghi";
 			int timeout = 3600;
-			int skipDepth = 1;
+			int skipDepth = 0;
 			boolean isFileNameExcepted = false;
 			byte[] cipherKey;
 			Facilities facilities = new Facilities();

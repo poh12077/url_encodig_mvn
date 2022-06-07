@@ -54,13 +54,18 @@ class Facilities {
 		for (int i = 1; i < skipDepth + 1; i++) {
 			skippedPath += urlArray[i] + "/";
 		}
-		for (int i = 1 + skipDepth; i < urlArray.length - fileNameExcepted; i++) {
+		for (int i = 1 + skipDepth; i < urlArray.length - 1; i++) {
 			path += urlArray[i] + "/";
 		}
 		path = path.substring(0, path.length() - 1);
 
 		if (fileNameExcepted != 0) {
 			fileName = "/" + urlArray[urlArray.length - 1];
+		}else {
+			String[] extensionArray = urlArray[urlArray.length - 1].split("\\.");
+			String extension = extensionArray[extensionArray.length -1];
+			fileName = ( "." + extension );
+			path += ( "/" + extensionArray[0] );
 		}
 
 		// exp
