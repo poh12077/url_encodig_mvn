@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			
-			String url = "/a/b/c/d/file_name.mp4";
+			String url = "/a/b/c/d/file.name..mp4";
 			String key = "abcdefghi";
 			int timeout = 3600;
 			int skipDepth = 0;

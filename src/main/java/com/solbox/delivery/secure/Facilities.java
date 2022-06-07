@@ -62,10 +62,10 @@ class Facilities {
 		if (fileNameExcepted != 0) {
 			fileName = "/" + urlArray[urlArray.length - 1];
 		}else {
-			String[] extensionArray = urlArray[urlArray.length - 1].split("\\.");
-			String extension = extensionArray[extensionArray.length -1];
-			fileName = ( "." + extension );
-			path += ( "/" + extensionArray[0] );
+			int index = urlArray[urlArray.length - 1].lastIndexOf(".");
+			String extension = urlArray[urlArray.length - 1].substring(index);
+			fileName = extension;
+			path += ( "/" + urlArray[urlArray.length - 1].substring(0,index) );
 		}
 
 		// exp
