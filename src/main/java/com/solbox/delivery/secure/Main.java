@@ -8,8 +8,8 @@ public class Main {
 			String url = "/a/b/c/d/file_name";
 			String key = "abcdefghi";
 			int timeout = 3600;
-			int skipDepth = 4;
-			boolean isFileNameExcepted = true;
+			int skipDepth = 1;
+			boolean isFileNameExcepted = false;
 			byte[] cipherKey;
 			Facilities facilities = new Facilities();
 			
