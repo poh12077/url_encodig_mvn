@@ -25,16 +25,4 @@ import javax.crypto.spec.SecretKeySpec;
 	        //base64 safe
 	        return Base64.getUrlEncoder().withoutPadding().encodeToString( encrypted ); 
 	    }
-
-		/*
-		 * public String decrypt(String cipherText, byte[] key) throws Exception {
-		 * Cipher cipher = Cipher.getInstance(alg); SecretKeySpec keySpec = new
-		 * SecretKeySpec(key, "AES"); //IvParameterSpec ivParamSpec = new
-		 * IvParameterSpec(iv.getBytes()); // IvParameterSpec ivParamSpec = new
-		 * IvParameterSpec(iv); cipher.init(Cipher.DECRYPT_MODE, keySpec, ivParamSpec);
-		 * 
-		 * byte[] decodedBytes = Base64.getDecoder().decode(cipherText); byte[]
-		 * decrypted = cipher.doFinal(decodedBytes); return new String(decrypted,
-		 * "UTF-8"); }
-		 */
 }

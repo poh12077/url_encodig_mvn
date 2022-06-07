@@ -22,13 +22,10 @@ class DataSet {
 		this.skippedPath = skippedPath;
 		this.fileName = fileName;
 	}
-
 }
 
 class Facilities {
-
 	DataSet inputParser(String url, int timeout, int skipDepth, boolean isFileNameExcepted) throws Exception {
-
 		// exception handling
 		if (timeout <= 0) {
 			throw new Exception("timeout must be greater than 0");
@@ -79,10 +76,8 @@ class Facilities {
 
 	void printResult(String cipherText, DataSet dataSet) throws Exception {
 		String result = dataSet.skippedPath + cipherText + dataSet.fileName;
-
 		System.out.println(dataSet.jsonString);
 		System.out.println(dataSet.jsonString.length());
 		System.out.println(result);
 	}
-
 }
