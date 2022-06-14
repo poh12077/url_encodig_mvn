@@ -1,7 +1,7 @@
 package com.solbox.delivery.secure;
 
 public class Encryption {
-	  static public String urlEncorder(String url, String key, int timeout, int
+	  static public String urlEncoder(String url, String key, int timeout, int
 	  skipDepth, boolean isFileNameExcepted) 
 	  { 
 		  try {

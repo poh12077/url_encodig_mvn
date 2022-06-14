@@ -5,10 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			
-			String url = "/a/b/c/d/file.name..mp4";
+			String url = "/a/b/c/d/file_name.mp4";
 			String key = "abcdefghi";
 			int timeout = 3600;
-			int skipDepth = 0;
+			int skipDepth = 1;
 			boolean isFileNameExcepted = false;
 			byte[] cipherKey;
 			Facilities facilities = new Facilities();
@@ -19,6 +19,7 @@ public class Main {
 			cipherKey = sha256.encrypt(key);
 
 			AES256 aes256 = new AES256();
+			
 			String cipherText = aes256.encrypt(dataSet.jsonString, cipherKey);
 
 			facilities.printResult(cipherText, dataSet);

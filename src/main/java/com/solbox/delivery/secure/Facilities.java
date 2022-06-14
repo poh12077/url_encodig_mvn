@@ -63,6 +63,9 @@ class Facilities {
 			fileName = "/" + urlArray[urlArray.length - 1];
 		}else {
 			int index = urlArray[urlArray.length - 1].lastIndexOf(".");
+			if (index== -1) {
+				throw new Exception("there is no file extension");
+			}
 			String extension = urlArray[urlArray.length - 1].substring(index);
 			fileName = extension;
 			path += ( "/" + urlArray[urlArray.length - 1].substring(0,index) );
