@@ -9,7 +9,7 @@ public class Main {
 			String key = "abcdefghi";
 			int timeout = 3600;
 			int skipDepth = 1;
-			boolean isFileNameExcepted = false;
+			boolean isFileNameExcepted = true;
 			byte[] cipherKey;
 			Facilities facilities = new Facilities();
 			
